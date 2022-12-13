@@ -3,9 +3,6 @@
     <head><title>Mahal</title></head>
 <body>
 
-<?php
-    include_once"header.php";
-?>
   <p>
         Love
         I've been on the road for hours all alone
@@ -3383,7 +3380,4 @@
         I'm happy with you 
         I'm happy with you
 
-<?php
-    include_once"footer.php";
-?>
 </body>
