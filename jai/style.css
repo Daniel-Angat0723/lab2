@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+body{
+  font-family: 'Poppins', 'sans-serif'!important;
+  margin: 0!important;
+  padding: 0!important;
+  display: flex!important;
+  font-family: 'Poppins', 'sans-serif'!important;
+  align-items: center!important;
+  justify-content: center!important;
+  height: 100%!important;
+  background: rgb(2,2,2)!important;
+  max-width: 1920px!important;
+  max-height: 1080px!important;
+}
+
+p{
+    font-size: 8px!important;
+    line-height: 1;
+    text-align: justify;background-size: cover!important;
+    -webkit-background-size: cover!important;
+    background:url(jai.jpg);
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-attachment: fixed!important;
+    background-size: cover!important;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: rgb(255, 255, 255,0)!important;
+    overflow: hidden!important;
+    width: 100%!important;
+    height:100%!important;
+}
