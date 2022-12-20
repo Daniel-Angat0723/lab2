@@ -2,8 +2,8 @@ body {
     background-color: aqua;
 }
 h1 {
-    color: white;
-    text-align: center;
+    color: navy;
+    margin-left: 20px;
 }
 p {
     color: red;
