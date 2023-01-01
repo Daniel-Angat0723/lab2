@@ -11,8 +11,8 @@ body{
   justify-content: center!important;
   height: 100%!important;
   background: rgb(2,2,2)!important;
-  max-width: 1920px!important;
-  max-height: 1080px!important;
+  max-width: 100%;
+  max-height: 100%;
 }
 p{
     font-size: 8px!important;
@@ -27,6 +27,6 @@ p{
     -webkit-background-clip: text!important;
     -webkit-text-fill-color: rgb(255, 255, 255,0)!important;
     overflow: hidden!important;
-    width: 100%!important;
+    width: Auto;
     height:100%!important;
 }

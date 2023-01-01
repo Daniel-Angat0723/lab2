@@ -1,16 +1,44 @@
 body {
-    background-color: aqua;
+    background-color: #191919;
 }
-h1 {
-    color: navy;
-    margin-left: 20px;
+.text{
+    color: whitesmoke;
+    font-family: 'Dekko';
 }
-p {
-    color: red;
-    text-align: left;
+#header{
+    width: 100%;
+    height: 50px;
+    border: solid whitesmoke;
+    padding-bottom: 50px;
+    font-size: 20px;
 }
-/*For id selection */
-#para1 {
-    text-align: center;
-    color: red;
-  }
+#header-text{
+    color: beige;
+}
+#body{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 30px;
+}
+#welcoming{
+    text-indent: 5%;
+    text-align: justify;
+}
+#signature{
+    text-indent: 80%;
+}
+#footer{
+    width: 100%;
+    height: 80px;
+    border: solid whitesmoke;
+}
+#inner-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    border: dashed whitesmoke;
+}
+.img{
+
+}
