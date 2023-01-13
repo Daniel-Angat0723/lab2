@@ -62,7 +62,7 @@ a:active {
 #Links{
   width: 100%;
   height: auto;
-  border: dashed whitesmoke;
+  border: solid whitesmoke;
   margin-top: 10px;
 }
 #actual-link{
