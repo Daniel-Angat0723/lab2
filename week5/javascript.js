@@ -1,3 +1,4 @@
+//Change text when visited
 function changeText1(id) {
     id.innerHTML = "HTML (Visited)";
 }
