@@ -18,4 +18,3 @@ function signature(id) {
 function nosign(id) {
     id.innerHTML = "-Mico";
 }
-  
