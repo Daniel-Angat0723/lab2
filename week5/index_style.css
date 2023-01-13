@@ -20,7 +20,7 @@ body {
     margin-right: 15%;
     font-size: 30px;
 }
-#welcoming{
+.welcoming{
     text-indent: 5%;
     text-align: justify;
 }
@@ -58,4 +58,13 @@ a:active {
   color: whitesmoke;
   background-color: transparent;
   text-decoration: underline;
+}
+#Links{
+  width: 100%;
+  height: auto;
+  border: dashed whitesmoke;
+  margin-top: 10px;
+}
+#actual-link{
+  padding-left: 20px;
 }
