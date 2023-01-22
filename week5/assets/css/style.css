@@ -380,4 +380,7 @@ img {
     #interest-content{
         margin-top: -40%;
     }
+    #disclaimer{
+        visibility: hidden;
+    }
 }
