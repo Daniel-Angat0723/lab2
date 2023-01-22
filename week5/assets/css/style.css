@@ -243,13 +243,16 @@ img {
     top: 0; 
     left: 0;  
     width: 100%; 
-    height: 65%;
+    height: 50%;
     overflow: hidden;
+}
+#interest-content{
+    margin-top: 33%;
 }
 @media screen and (max-width: 1900px) {
     #unmute-button{
         position: relative;
-        top: 89%;
+        top: 87%;
         left:87%;
     }
     #interest-vid-container{
@@ -257,8 +260,11 @@ img {
         top: 0; 
         left: 0;  
         width: 100%; 
-        height: 55%;
-    }    
+        height: 45%;
+    }
+    #interest-content{
+        margin-top: 28%;
+    }      
 }
 @media screen and (max-width: 1700px) {
     #unmute-button{
@@ -271,8 +277,12 @@ img {
         top: 0; 
         left: 0;  
         width: 100%; 
-        height: 50%;
-    }    
+        height: 42%;
+    }
+    #interest-content{
+        margin-top: 33%;
+    }  
+        
 }
 @media screen and (max-width: 1550px) {
     #unmute-button{
@@ -285,8 +295,12 @@ img {
         top: 0; 
         left: 0;  
         width: 100%; 
-        height: 45%;
-    }    
+        height: 40%;
+    }
+    #interest-content{
+        margin-top: 35%;
+    }  
+        
 }
 @media screen and (max-width: 1445px) {
     #unmute-button{
@@ -300,7 +314,10 @@ img {
         left: 0;  
         width: 100%; 
         height: 40%;
-    }    
+    }
+    #interest-content{
+        margin-top: 35%;
+    }      
 }
 @media screen and (max-width: 1350px) {
     #unmute-button{
@@ -314,13 +331,16 @@ img {
         left: 0;  
         width: 100%; 
         height: 35%;
-    }    
+    }
+    #interest-content{
+        margin-top: 25%;
+    }      
 }
 @media screen and (max-width: 1250px) {
     #unmute-button{
         position: relative;
-        top: 76%;
-        left:76%;
+        top: 70%;
+        left:78%;
     }
     #interest-vid-container{
         position: absolute; 
@@ -328,13 +348,16 @@ img {
         left: 0;  
         width: 100%; 
         height: 25%;
-    }    
+    }
+    #interest-content{
+        margin-top: 10%;
+    }     
 }
 @media screen and (max-width: 1150px) {
     #unmute-button{
         position: relative;
-        top: 74%;
-        left:74%;
+        top: 70%;
+        left:78%;
     }
     #interest-vid-container{
         position: absolute; 
@@ -342,45 +365,19 @@ img {
         left: 0;  
         width: 100%; 
         height: 23%;
+    }
+    #interest-content{
+        margin-top: 10%;
     }    
 }
 @media screen and (max-width: 1050px) {
     #unmute-button{
-        position: relative;
-        top: 70%;
-        left:72%;
-    }
-    #interest-vid-container{
-        position: absolute; 
-        top: 0; 
-        left: 0;  
-        width: 100%; 
-        height: 20%;
-    }    
-}
-@media screen and (max-width: 726px) {
-    #unmute-button{
-        position: relative;
-        top: 65%;
-        left:72%;
-    }
-    #interest-vid-container{
-        position: absolute; 
-        top: 0; 
-        left: 0;  
-        width: 100%; 
-        height: 17%;
-    }    
-}
-@media screen and (max-width: 677px) {
-    #unmute-button{
         visibility: hidden;
     }
     #interest-vid-container{
-        position: absolute; 
-        top: 0; 
-        left: 0;  
-        width: 100%; 
-        height: 12%;
+        visibility: hidden;
     }    
+    #interest-content{
+        margin-top: -40%;
+    }
 }
