@@ -461,39 +461,7 @@
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var vid = document.getElementById("interest-vid");
-
-        function mute() { 
-            vid.muted = true;
-        }
-        function umute(){
-            vid.muted = false
-        }
-
-        function clicked(){
-            if (vid.muted === false){
-                mute();
-                document.getElementById("unmute-button").innerHTML = "Unmute Video";
-            }else{
-                umute();
-                document.getElementById("unmute-button").innerHTML = "Mute Video";
-            }
-            
-        }
-        
-
-    </script>
-    <script>
-
-        var type = new Typed (".auto-type",{
-        strings: ["CODER", "STUDENT", "GAMER", "CYCLIST", "WEIGHT LIFTER"],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-        })
-  
-    </script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
