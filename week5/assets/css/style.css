@@ -94,6 +94,7 @@ img {
     color: var(--color-brand2);
 }
 
+
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
@@ -101,6 +102,7 @@ img {
         background: linear-gradient(rgba(3, 4, 4, 0.8), rgba(4, 5, 5, 0.8)), url(https://images.unsplash.com/photo-1607187488541-0ee24bd99a73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8a2F3YXNha2klMjBuaW5qYXxlbnwwfHwwfHw%3D&w=1000&q=80);
         background-size: cover;
         background-position: center;
+        animation: gradient 90s ease infinite;
     }
 
     .navbar-brand img {
@@ -111,6 +113,17 @@ img {
     #content-wrapper {
         padding-left: var(--sidbar-width);
     }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* BTN */
