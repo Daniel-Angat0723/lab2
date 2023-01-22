@@ -301,11 +301,12 @@
         <section id="interests" class="full-height px-lg-5 background-video-overlay" style="position: relative;">
             <div class="container">
                 <div id="interest-vid-container">
-                    <video autoplay controls id="interest-vid">
+                    <video autoplay loop controls muted id="interest-vid">
                         <source src="./assets/images/sportsbike-colorgraded.mp4" type="video/mp4">
                     </video>
+                        <div class="btn btn-brand me-3 muted" id="unmute-button" data-aos="fade-up" data-aos-delay="1000" onclick="clicked()">Unmute Video</div>
                 </div>
-                    
+       
             </div>
         </section>
         <!-- //INTERESTS -->
@@ -444,12 +445,37 @@
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+        var vid = document.getElementById("interest-vid");
+
+        function mute() { 
+            vid.muted = true;
+        }
+        function umute(){
+            vid.muted = false
+        }
+
+        function clicked(){
+            if (vid.muted === false){
+                mute();
+                document.getElementById("unmute-button").innerHTML = "Unmute Video";
+            }else{
+                umute();
+                document.getElementById("unmute-button").innerHTML = "Mute Video";
+            }
+            
+        }
+        
+
+    </script>
+    <script>
+
         var type = new Typed (".auto-type",{
         strings: ["CODER", "STUDENT", "GAMER", "CYCLIST", "WEIGHT LIFTER"],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true
         })
+  
     </script>
 </body>
 

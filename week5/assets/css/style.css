@@ -233,6 +233,11 @@ img {
     margin-top: -150px;
     
 }
+#unmute-button{
+    position: relative;
+    top: 89%;
+    left:89%;
+}
 #interest-vid-container{
     position: absolute; 
     top: 0; 
@@ -240,4 +245,142 @@ img {
     width: 100%; 
     height: 65%;
     overflow: hidden;
+}
+@media screen and (max-width: 1900px) {
+    #unmute-button{
+        position: relative;
+        top: 89%;
+        left:87%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 55%;
+    }    
+}
+@media screen and (max-width: 1700px) {
+    #unmute-button{
+        position: relative;
+        top: 86%;
+        left:85%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 50%;
+    }    
+}
+@media screen and (max-width: 1550px) {
+    #unmute-button{
+        position: relative;
+        top: 84%;
+        left:85%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 45%;
+    }    
+}
+@media screen and (max-width: 1445px) {
+    #unmute-button{
+        position: relative;
+        top: 82%;
+        left:82%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 40%;
+    }    
+}
+@media screen and (max-width: 1350px) {
+    #unmute-button{
+        position: relative;
+        top: 80%;
+        left:80%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 35%;
+    }    
+}
+@media screen and (max-width: 1250px) {
+    #unmute-button{
+        position: relative;
+        top: 76%;
+        left:76%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 25%;
+    }    
+}
+@media screen and (max-width: 1150px) {
+    #unmute-button{
+        position: relative;
+        top: 74%;
+        left:74%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 23%;
+    }    
+}
+@media screen and (max-width: 1050px) {
+    #unmute-button{
+        position: relative;
+        top: 70%;
+        left:72%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 20%;
+    }    
+}
+@media screen and (max-width: 726px) {
+    #unmute-button{
+        position: relative;
+        top: 65%;
+        left:72%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 17%;
+    }    
+}
+@media screen and (max-width: 677px) {
+    #unmute-button{
+        visibility: hidden;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 12%;
+    }    
 }
