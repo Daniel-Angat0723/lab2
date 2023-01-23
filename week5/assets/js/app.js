@@ -25,4 +25,16 @@ var vid = document.getElementById("interest-vid");
             }
             
         }
+//Puts Text in a span
 document.getElementById("rev").innerHTML = " Unmute the video for awesome beats and revgasm!";
+//Added Time at footer
+function display_c(){
+    var refresh = 1000;
+    mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct(){
+    var x = new Date()
+    document.getElementById('ct').innerHTML = x;
+    display_c();
+}
