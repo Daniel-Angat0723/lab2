@@ -249,8 +249,11 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    margin-top: -150px;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto;
+    height: auto;
+    margin-top: -17%;
     z-index: -1;
 }
 #unmute-button{
