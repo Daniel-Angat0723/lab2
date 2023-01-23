@@ -332,6 +332,23 @@ img {
         margin-top: 35%;
     }      
 }
+@media screen and (max-width: 1382px) {
+    #unmute-button{
+        position: relative;
+        top: 82%;
+        left:82%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 37%;
+    }
+    #interest-content{
+        margin-top: 35%;
+    }      
+}
 @media screen and (max-width: 1350px) {
     #unmute-button{
         position: relative;
@@ -346,8 +363,25 @@ img {
         height: 35%;
     }
     #interest-content{
-        margin-top: 25%;
+        margin-top: 30%;
     }      
+}
+@media screen and (max-width: 1300px) {
+    #unmute-button{
+        position: relative;
+        top: 70%;
+        left:78%;
+    }
+    #interest-vid-container{
+        position: absolute; 
+        top: 0; 
+        left: 0;  
+        width: 100%; 
+        height: 25%;
+    }
+    #interest-content{
+        margin-top: 25%;
+    }     
 }
 @media screen and (max-width: 1250px) {
     #unmute-button{
@@ -363,7 +397,7 @@ img {
         height: 25%;
     }
     #interest-content{
-        margin-top: 10%;
+        margin-top: 20%;
     }     
 }
 @media screen and (max-width: 1150px) {
@@ -380,7 +414,7 @@ img {
         height: 23%;
     }
     #interest-content{
-        margin-top: 10%;
+        margin-top: 20%;
     }    
 }
 @media screen and (max-width: 1050px) {
@@ -391,7 +425,49 @@ img {
         visibility: hidden;
     }    
     #interest-content{
-        margin-top: -40%;
+        margin-top: -10%;
+    }
+    #disclaimer{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #unmute-button{
+        visibility: hidden;
+    }
+    #interest-vid-container{
+        visibility: hidden;
+    }    
+    #interest-content{
+        margin-top:  0%;
+    }
+    #disclaimer{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 540px) {
+    #unmute-button{
+        visibility: hidden;
+    }
+    #interest-vid-container{
+        visibility: hidden;
+    }    
+    #interest-content{
+        margin-top: -25%;
+    }
+    #disclaimer{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 380px) {
+    #unmute-button{
+        visibility: hidden;
+    }
+    #interest-vid-container{
+        visibility: hidden;
+    }    
+    #interest-content{
+        margin-top: -10%;
     }
     #disclaimer{
         visibility: hidden;
