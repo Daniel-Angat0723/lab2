@@ -38,3 +38,35 @@ function display_ct(){
     document.getElementById('ct').innerHTML = x;
     display_c();
 }
+//Opening Greetings
+$(document).ready(function(){
+    let timerInterval
+    Swal.fire({
+    title: 'Hello human welcome to my profile page!',
+    text: 'I give you this great opportunity to look at this fine machinery for 10 seconds.',
+    imageUrl: 'https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2020/11/2021-Kawasaki-Ninja-ZX-10R-KRT-35-scaled.jpg?ssl=1',
+    imageWidth: 600,
+    imageHeight: 400,
+    imageAlt: 'Custom image',
+    timer: 10000,
+    timerProgressBar: true,
+    background:'#242526',
+    color:'whitesmoke',
+    didOpen: () => {
+        Swal.showLoading()
+        const b = Swal.getHtmlContainer().querySelector('b')
+        timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft()
+        }, 100)
+    },
+    willClose: () => {
+        clearInterval(timerInterval)
+    }
+    }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+        console.log('I was closed by the timer')
+    }
+    })
+   
+});
