@@ -43,7 +43,7 @@ $(document).ready(function(){
     let timerInterval
     Swal.fire({
     title: 'Hello human welcome to my profile page!',
-    text: 'I give you this great opportunity to look at this fine machinery for 10 seconds.',
+    text: 'I give you this great opportunity to look at this fine piece of machinery for 10 seconds.',
     imageUrl: 'https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2020/11/2021-Kawasaki-Ninja-ZX-10R-KRT-35-scaled.jpg?ssl=1',
     imageWidth: 600,
     imageHeight: 400,
