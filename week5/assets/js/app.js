@@ -25,3 +25,4 @@ var vid = document.getElementById("interest-vid");
             }
             
         }
+document.getElementById("rev").innerHTML = " Unmute the video for awesome beats and revgasm!";
