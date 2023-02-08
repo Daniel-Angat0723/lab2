@@ -47,7 +47,7 @@
                         <a class="nav-link" href="#resources">resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact me</a>
+                        <a class="nav-link" href="#form">Register & Login</a>
                     </li>
 
                 </ul>
@@ -458,20 +458,20 @@
         <!-- //RESOURCES -->
 
         <!-- FORM -->
-        <section id="contact" class="full-height px-lg-5">
+        <section id="form" class="full-height px-lg-5">
             <div class="container">
 
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
-                        <h6 class="text-brand">Contact Me</h6>
-                        <h1>Answer the form below</h1>
+                        <h6 class="text-brand">Register & Login</h6>
+                        <h2>Become Awesome! Register to our group</h2>
                     </div>
                 </div>
 
                 <?php
                 // define variables and set to empty values
-                $nameErr = $emailErr = $genderErr = $websiteErr = "";
-                $name = $email = $gender = $comment = $website = "";
+                $nameErr = $usr_passwordErr = $emailErr = $genderErr = $websiteErr = "";
+                $name = $usr_password = $email = $gender = $comment = $website = "";
 
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (empty($_POST["name"])) {
@@ -479,25 +479,26 @@
                 } else {
                     $name = test_input($_POST["name"]);
                 }
-                
+                if (empty($_POST["usr_password"])) {
+                    $usr_passwordErr = "Password is required";
+                } else {
+                    $usr_password = test_input($_POST["usr_password"]);
+                }
                 if (empty($_POST["email"])) {
                     $emailErr = "Email is required";
                 } else {
                     $email = test_input($_POST["email"]);
                 }
-                    
                 if (empty($_POST["website"])) {
-                    $website = "";
+                    $websiteErr = "Website is required";
                 } else {
                     $website = test_input($_POST["website"]);
                 }
-
                 if (empty($_POST["comment"])) {
                     $comment = "";
                 } else {
                     $comment = test_input($_POST["comment"]);
                 }
-
                 if (empty($_POST["gender"])) {
                     $genderErr = "Gender is required";
                 } else {
@@ -505,21 +506,22 @@
                 }
 
                 $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "myDB";
+                $username = "webprogss211";
+                $password = "webprogss211";
+                $dbname = "webprogss211";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 // Check connection
                 if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
                 }
+                $encrypted_pass = md5($usr_password);
 
-                $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-                VALUES ('$name', '', '$email')";
+                $sql = "INSERT INTO ddangat_myguests (name, password, email, gender, comment, website)
+                VALUES ('$name', '$encrypted_pass', '$email', '$gender', '$comment', '$website')";
 
                 if ($conn->query($sql) === TRUE) {
-                    echo "New record created successfully";
+                    echo "<p class='text-brand'>New record created successfully</p>";
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                 }
@@ -541,13 +543,16 @@
                 Name: <input type="text" name="name">
                 <span class="error">* <?php echo $nameErr;?></span>
                 <br><br>
-                E-mail: <input type="text" name="email">
+                Password: <input type="password" name="usr_password">
+                <span class="error">* <?php echo $usr_passwordErr;?></span>
+                <br><br>
+                E-mail: <input type="email" name="email">
                 <span class="error">* <?php echo $emailErr;?></span>
                 <br><br>
                 Website: <input type="text" name="website">
-                <span class="error"><?php echo $websiteErr;?></span>
+                <span class="error">*<?php echo $websiteErr;?></span>
                 <br><br>
-                Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+                Comment: <textarea name="comment" rows="5" cols="40"></textarea>*
                 <br><br>
                 Gender:
                 <input type="radio" name="gender" value="female">Female
@@ -557,19 +562,6 @@
                 <br><br>
                 <input type="submit" name="submit" value="Submit">  
                 </form>
-
-                <?php
-                echo "<h2>Your Input:</h2>";
-                echo $name;
-                echo "<br>";
-                echo $email;
-                echo "<br>";
-                echo $website;
-                echo "<br>";
-                echo $comment;
-                echo "<br>";
-                echo $gender;
-                ?>
                 
             </div>
         </section>
