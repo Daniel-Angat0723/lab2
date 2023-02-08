@@ -505,20 +505,6 @@
                     $gender = test_input($_POST["gender"]);
                 }
 
-                echo "<h2>Your Input:</h2>";
-                echo $name;
-                echo "<br>";
-                echo $encrypted_pass;
-                echo "<br>";
-                echo $email;
-                echo "<br>";
-                echo $website;
-                echo "<br>";
-                echo $comment;
-                echo "<br>";
-                echo $gender;
-                echo "<br>";
-
                 $servername = "localhost";
                 $username = "webprogss211";
                 $password = "webprogss211";
@@ -575,6 +561,22 @@
                 <br><br>
                 <input type="submit" name="submit" value="Submit">  
                 </form>
+
+                <?php
+                echo "<h2>Your Input:</h2>";
+                echo $name;
+                echo "<br>";
+                echo $encrypted_pass;
+                echo "<br>";
+                echo $email;
+                echo "<br>";
+                echo $website;
+                echo "<br>";
+                echo $comment;
+                echo "<br>";
+                echo $gender;
+                echo "<br>";
+                ?>
                 
             </div>
         </section>
