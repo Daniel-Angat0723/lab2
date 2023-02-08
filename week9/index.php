@@ -537,7 +537,6 @@
                 }
                 ?>
 
-                <h2>PHP Form Validation Example</h2>
                 <p><span class="error">* required field</span></p>
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
                 Name: <input type="text" name="name">
